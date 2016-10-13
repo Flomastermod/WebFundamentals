@@ -528,3 +528,8 @@ gulp.task('test', function(callback) {
     })
     .then(printSummary);
 });
+
+exports.getFilelist = getFilelist;
+exports.logError = logError
+exports.logWarning = logWarning
+exports.readFile = readFile
