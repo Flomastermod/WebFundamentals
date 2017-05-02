@@ -38,13 +38,16 @@ Note: Headless mode is available on Mac and Linux in **Chrome 59**.
 ## Starting Headless (CLI) {: #cli }
 
 The easiest way to get started with headless mode is to open the Chrome binary
-from the command line. If you've got **Chrome 59+** installed, start Chrome with the `--headless` flag:
+from the command line. 
 
-    chrome \
-      --headless \                   # Runs Chrome in headless mode.
-      --disable-gpu \                # Temporarily needed for now.
-      --remote-debugging-port=9222 \
-      https://www.chromestatus.com   # URL to open. Defaults to about:blank.
+1. Navigate to `chrome://version/` and verify that you're running Chrome 59.
+2. Start Chrome with the `--headless` flag:
+
+      <pre>chrome \
+        --headless \                   # Runs Chrome in headless mode.
+        --disable-gpu \                # Temporarily needed for now.
+        --remote-debugging-port=9222 \
+        https://www.chromestatus.com   # URL to open. Defaults to about:blank.</pre>
 
 Note: Right now, you'll also want to include the `--disable-gpu` flag.
 That will eventually go away.
