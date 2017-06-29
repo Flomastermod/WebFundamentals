@@ -1022,3 +1022,12 @@ gulp.task('test', function() {
   .then(printSummary)
   .then(throwIfFailed);
 });
+
+exports.logMessage = logMessage;
+exports.logError = logError;
+exports.logWarning = logWarning;
+exports.printSummary = printSummary;
+exports.throwIfFailed = throwIfFailed;
+exports.getFiles = getFiles;
+exports.readFile = readFile;
+exports.parseJSON = parseJSON;
