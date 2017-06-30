@@ -94,6 +94,9 @@ function verifyUsage(fileContent, fileName, options) {
 
 function editFile(filename, options) {
 	let filenameObj = path.parse(filename.toLowerCase());
+  // START HERE: Files meeting this condition do not need to be tested.
+  // (filenameObj.dir === 'src/content/en')
+  // How do I do it?
 	if (EXTENSIONS_TO_SKIP.indexOf(filenameObj.ext) === -1) {
     let regFile = getRegularizedFile(filename);
     return Promise.all([
