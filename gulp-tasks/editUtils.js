@@ -246,7 +246,11 @@ function isSentenceCase(title) {
 			}
 		}
 
-
+		//PETE-This process the title by taking the first word off and processing again.
+		// I did this instead of breaking the title into an array (if I recall correctly)
+		// because some dictionary terms are actually multiple words, allof which *must* be
+		// capitalized as defined. This approach made it easier to match multi-word terms
+		// and eliminate them from further consideration.
 		while (shrinkingTitle != '') {
 
 			// Check dictionary words
